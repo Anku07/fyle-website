@@ -1,0 +1,421 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+/* MAIN CONTENT */
+#container {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    margin: 0;
+}
+
+#award-winning-section {
+    background-color: white;
+}
+
+#services-section {
+    background-color: #FAFAFA;
+}
+
+#why-best-section {
+    background-color: white;
+}
+
+#experts-growth-section {
+    background-color: #FAFAFA;
+}
+
+#feedback-section {
+    background-color: white;
+}
+
+.section-title {
+    text-align: center;
+    font: normal normal 400 25px Poppins;
+    letter-spacing: 0px;
+    color: #FF3147;
+    text-transform: uppercase;
+    opacity: 1;
+    padding-top: 80px;
+}
+
+.section-tag {
+    text-align: center;
+    font: normal normal 600 40px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin: 0px;
+}
+
+/* Award Winning Section */
+.cover-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.cover-container h5 {
+    text-align: left;
+}
+
+.cover-container h4 {
+    text-align: left;
+    font: normal normal 600 50px Poppins;
+}
+
+.cover-container img {
+    max-width: 100%;
+    width: 487px;
+    height: 737px;
+}
+
+.cover-container-description {
+    text-align: left;
+    font: normal normal 300 16px/30px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+
+.contact-us {
+    background: #FF3147 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+    color: white;
+    width: 160px;
+    height: 50px;
+}
+
+/* MODAL */
+.modal-style {
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-header p {
+    text-align: left;
+    letter-spacing: 0.4px;
+    color: #2D3142;
+    opacity: 1;
+    font: normal normal 600 20px Poppins;
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 0;
+}
+
+.modal-footer button {
+    border-radius: 6px;
+    width: 100%;
+    height: 52px;
+    background: #FF3366 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: white;
+    font: normal normal 400 18px Poppins;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #6F718F80;
+    border-radius: 0;
+    box-shadow: none;
+    letter-spacing: 0.4px;
+    font: normal normal 400 16px Poppins;
+    color: black;
+    padding: 0;
+    opacity: 0.8;
+}
+
+.form-control:focus {
+    border-bottom: 1px solid black;
+    box-shadow: none;
+}
+
+.form-check-label {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #616678;
+    padding-bottom: 20px;
+    opacity: 0.9;
+    font: normal normal 400 14px Poppins;
+}
+
+.form-check-input {
+    background-color: transparent;
+    border: 2px solid #FF3366;
+    accent-color: #FF3366;
+}
+
+input[type="checkbox"]#terms:checked {
+    border-color: #FF3366;
+    background-color: #FF3366;
+}
+
+/* Our Services */
+.flip-card {
+    background-color: transparent;
+    width: 370px;
+    height: 526px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    background-color: #FF3147;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-back-title {
+    text-align: center;
+    font: normal normal 400 24px/26px Poppins;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    padding-top: 35px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.flip-card-back-description {
+    text-align: center;
+    font: normal normal normal 16px Poppins;
+    letter-spacing: 0px;
+    padding-top: 20px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.custom-btn {
+    background-color: #FFFFFF;
+    /* Button background color */
+    color: #FF3147;
+    /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font: normal normal 600 14px/26px Poppins;
+    letter-spacing: 1.4px;
+    width: 185px;
+    height: 50px;
+}
+
+.custom-btn:hover {
+    background-color: #FFFFFF;
+    color: #FF3147;
+    text-decoration: none;
+}
+
+.custom-btn .arrow {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.custom-btn:hover .arrow {
+    transform: translateX(5px);
+}
+
+
+/* Why best */
+.choose-us-card {
+    text-align: left;
+}
+
+.choose-us-card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.choose-us-card-title {
+    margin-bottom: 10px;
+    text-align: left;
+    font: normal normal 400 20px/40px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.choose-us-card-description {
+    text-align: left;
+    font: normal normal normal 16px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.project-cover-img {
+    max-width: 100%;
+    border-radius: 5px;
+    width: 770px;
+    height: 567px;
+}
+
+.project-card {
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 370px;
+    height: 189px;
+    background-color: #F6F6F6;
+}
+
+.project-card:hover {
+    background-color: #FF3147;
+    color: white;
+}
+
+.highlight {
+    background-color: #FF3147;
+    color: white;
+}
+
+.project-card-title {
+    text-align: left;
+    font: normal normal 600 20px Poppins;
+    letter-spacing: 0px;
+    padding-top: 10px;
+}
+
+.project-card-description {
+    text-align: left;
+    font: normal normal 400 16px/28px Poppins;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+/* Experts Growths */
+.growth-card {
+    width: 300px;
+    height: 233px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: none;
+    opacity: 1;
+}
+
+.growth-card:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.04);
+}
+
+.growth-card img {
+    width: 39px;
+    height: 39px;
+}
+
+.growth-card-title {
+    text-align: center;
+    font: normal normal 300 50px/60px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.growth-card-text {
+    text-align: center;
+    font: normal normal 300 20px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+/* Client Feedback */
+#client-feedback {
+    text-align: center;
+    font: normal normal 300 20px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    text-align: left;
+}
+
+#feedback-client-name {
+    font: normal normal bold 20px Poppins;
+    letter-spacing: 0px;
+    color: #FF3147;
+    opacity: 1;
+    display: inline-block;
+    padding-bottom: 100px;
+    text-align: left;
+    display: inline-block;
+}
+
+#feedback-client-designation {
+    text-align: center;
+    font: normal normal 300 20px Poppins;
+    letter-spacing: 0px;
+    color: #808080;
+    opacity: 1;
+    text-align: left;
+    display: inline-block;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #FF3147;
+    position: relative;
+    height: 310px;
+    margin-top: -100px;
+    clear: both;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.footer img {
+    height: 56px;
+    width: 1170px;
+}
