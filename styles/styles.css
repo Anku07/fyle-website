@@ -381,6 +381,17 @@ input[type="checkbox"]#terms:checked {
     text-align: left;
 }
 
+#feedback-text {
+    text-align: left;
+    font: normal normal 300 20px/50px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    background-image: url(../assets/Quotemarks-left.svg);
+    background-repeat: no-repeat;
+    padding-left: 5px;
+}
+
 #feedback-client-name {
     font: normal normal bold 20px Poppins;
     letter-spacing: 0px;
